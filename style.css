@@ -1,0 +1,301 @@
+/* Color Palette */
+:root {
+    --background-color: #FEF3EC;
+    --light-blue: #2FAFC8;
+    --dark-blue: #3E3D4E;
+    --blue-font: #3E416D;
+    --orange: #FCC7A8;
+    --gray-font: #AEADB4;
+    --gray-border: #979797;
+    --regular-white: white;
+  
+    /* Margins & Padding */
+    --padding-left-right: 60px;
+  
+    /* Typography Settings */
+    --h1-heading-size: 40px;
+    --h2-heading-size: 25px;
+  
+    /* Button Configuration */
+    --header-button-text-size: 20px;
+    --button-padding-y: 10px;
+    --button-padding-x: 15px;
+    --button-border-radius: 5px;
+  }
+  .apply-banner {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* set the banner width to 100% */
+    margin-bottom: 30px; /* add some margin at the bottom to separate it from the pricing section */
+  }
+  
+  
+  .apply-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .apply-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--orange);
+    color: var(--regular-white);
+    font-size: var(--header-button-text-size);
+    border-radius: var(--button-border-radius);
+    text-align: center;
+    z-index: 1;
+    cursor: pointer; /* add cursor pointer to indicate it's clickable */
+    white-space: nowrap; /* prevent button text from wrapping to multiple lines */
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    color: var(--dark-blue);
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--dark-blue);
+  }
+  
+  .header-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .main-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  
+  .main-card {
+    background-color: var(--regular-white);
+    border-radius: var(--button-border-radius);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-card h2 {
+    margin-bottom: 10px;
+  }
+  
+  .main-card p {
+    margin-bottom: 15px;
+  }
+  
+  .main-card a {
+    display: inline-block;
+    background-color: var(--orange);
+    color: var(--regular-white);
+    padding: var(--button-padding-y) var(--button-padding-x);
+    border-radius: var(--button-border-radius);
+    text-align: center;
+  }
+  
+  /* Pricing */
+  #pricing {
+    background-color: var(--background-color);
+    #pricing {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .section-header h2 {
+    font-size: var(--h1-heading-size);
+    color: var(--blue-font);
+  }
+  
+  .pricing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* set the columns to expand to fill the available space */
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .pricing-card {
+    background-color: var(--regular-white);
+    border: 1px solid var(--gray-border); /* add a 1px solid border */
+    border-radius: var(--button-border-radius);
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .card-header {
+    margin-bottom: 30px;
+  }
+  
+  .card-header h3 {
+    font-size: var(--h2-heading-size);
+    color: var(--blue-font);
+  }
+  
+  .card-header p {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  
+  .card-body {
+    margin-bottom: 30px;
+  }
+  
+  .card-body ul {
+    list-style: none;
+    margin-bottom: 30px;
+  }
+  
+  .card-body ul li {
+    margin-bottom: 15px;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: var(--orange);
+    color: var(--regular-white);
+    padding: var(--button-padding-y) var(--button-padding-x);
+    border-radius: var(--button-border-radius);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .button:hover {
+    transform: translateY(-5px);
+  }
+  
+  .financial-aid {
+    text-align: center;
+    font-size: 18px;
+    color: var(--gray-font);
+  }
+  
+  .financial-aid a {
+    color: var(--gray-font);
+  }
+  /* Navigation */
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    background-color: var(--light-blue);
+    width: 100%; /* stretches the navigation menu across the webpage */
+  }
+  
+  .nav-menu li {
+    margin: 0 10px;
+  }
+  
+  .nav-menu li:last-of-type {
+    margin-right: 0;
+  }
+  
+  .nav-menu li a {
+    text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 5px #000, 0 0 5px #000; /* adds a border around each word */
+  }
+  
+  /* Set the background color of the entire header to light blue */
+  header {
+    background-color: var(--light-blue);
+  }
+  
+  /* Set the logo to have a white background and centered above the navigation menu */
+  .logo {
+    text-align: center;
+    margin-top: 20px; /* Change this value to adjust the distance between the logo and the navigation menu */
+  }
+  
+  
+  /* Add a berry emoji to the logo */
+  .logo span {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  
+  /* Set the color of all text in the header to white */
+  header * {
+    color: white;
+  }
+  
+  /* Navigation */
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    background-color: var(--light-blue);
+    width: 100%; /* stretches the navigation menu across the webpage */
+  }
+  
+  .nav-menu li {
+    margin: 0 10px;
+  }
+  
+  .nav-menu li:last-of-type {
+    margin-right: 0;
+  }
+  
+  .nav-menu li a {
+    display: inline-block;
+    padding: var(--button-padding-y) var(--button-padding-x);
+    border-radius: var(--button-border-radius);
+    background-color: var(--orange);
+    color: var(--regular-white);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-menu li a:hover {
+    transform: translateY(-5px);
+  }
+  
+  
+  }
+  footer {
+    background-color: var(--light-blue);
+    color: var(--regular-white);
+    padding: 60px var(--padding-left-right);
+  }
+  
+  .testimonial-banner {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .testimonial {
+    flex-basis: 30%;
+    padding: 20px;
+    background-color: var(--regular-white);
+    border-radius: var(--button-border-radius);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  
